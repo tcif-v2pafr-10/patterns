@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customer id="100">
+    <address>
+        <address>Nijenoord 1</address>
+        <city>Utrecht</city>
+        <zip>3500AA</zip>
+    </address>
+    <age>21</age>
+    <name>Berend Wilkens</name>
+</customer>
