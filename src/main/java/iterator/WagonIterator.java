@@ -33,11 +33,9 @@ public class WagonIterator implements Iterator<Wagon> {
 				if (index > (current + train.getWagons().size())) {
 					current += train.getWagons().size();
 				} else {
-//					System.out.println("Index = "+index+" current = "+current);
 					return train.getWagons().get(index-current-1);
 				}
 			}
-
 		}
 		return null;
 	}
