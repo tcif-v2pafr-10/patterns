@@ -2,7 +2,7 @@ package iterator;
 
 public class Main {
 	public static void main(String[] args) {
-		RailRoadCompany railRoadCompany = new RailRoadCompany();
+		Company railRoadCompany = new Company();
 		Train train1 = new Train("TGV");
 		Wagon wagon1 = new Wagon("Eerste klasse", 25);
 		wagon1.setTrain(train1);

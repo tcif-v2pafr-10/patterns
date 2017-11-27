@@ -3,11 +3,11 @@ package iterator;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RailRoadCompany {
+public class Company {
 	private List<Train> trains = new ArrayList<>();
 	private Wagons wagons = new Wagons(trains);
 
-	public RailRoadCompany() {
+	public Company() {
 	}
 
 	public List<Train> getTrains() {
@@ -34,14 +34,13 @@ public class RailRoadCompany {
 		trains.remove(train);
 	}
 
-	// public Wagon getWagonByName(String name) {
-	// for (Wagon wagon : wagons) {
-	// if (wagon.getName().equals(name))
-	// return wagon;
-	// }
-	//
-	// return null;
-	// }
+	public Wagon getWagonByName(String name) {
+		for (Wagon wagon : wagons) {
+			if (wagon.getName().equals(name))
+				return wagon;
+		}
+		return null;
+	}
 
 	public boolean addWagon(Wagon wagon) {
 		if (!wagon.getTrain().getWagons().contains(wagon)) {
@@ -62,9 +61,5 @@ public class RailRoadCompany {
 
 	public Wagons getWagons() {
 		return wagons;
-	}
-
-	public void setWagons(Wagons wagons) {
-		this.wagons = wagons;
 	}
 }
