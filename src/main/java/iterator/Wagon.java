@@ -3,7 +3,6 @@ package iterator;
 public class Wagon {
     private String name;
     private int seats = 20;
-    private Train train;
 
     public Wagon(String name, int seats) {
         setName(name);
@@ -30,17 +29,6 @@ public class Wagon {
         this.seats = seats;
     }
 
-    public Train getTrain() {
-        return train;
-    }
-
-    public void setTrain(Train train) {
-        this.train = train;
-    }
-
-    public void removeTrain() {
-        train = null;
-    }
 
     @Override
     public boolean equals(Object o) {

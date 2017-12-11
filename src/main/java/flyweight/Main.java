@@ -1,6 +1,6 @@
 package flyweight;
 
-public class FlyWeightDemo {
+public class Main {
 	public static final int ROWS = 6, COLS = 10;
 
 	public static void main(String[] args) {

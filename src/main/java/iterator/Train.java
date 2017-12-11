@@ -35,8 +35,12 @@ public class Train {
 		return name.hashCode();
 	}
 
-	public void addWagon(Wagon wagon) {
-		wagons.add(wagon);
+	public boolean addWagon(Wagon wagon) {
+		if (!this.wagons.contains(wagon)) {
+			wagons.add(wagon);
+			return true;
+		}
+		return false;
 	}
 
 	public int getSeats() {

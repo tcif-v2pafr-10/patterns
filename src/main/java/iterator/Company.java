@@ -42,18 +42,6 @@ public class Company {
 		return null;
 	}
 
-	public boolean addWagon(Wagon wagon) {
-		if (!wagon.getTrain().getWagons().contains(wagon)) {
-			wagon.getTrain().getWagons().add(wagon);
-			return true;
-		}
-		return false;
-	}
-
-	public void removeWagon(Wagon wagon) {
-		wagon.getTrain().removeWagon(wagon);
-	}
-
 	@Override
 	public String toString() {
 		return "RailRoadCompany [trains=" + trains + "]";
